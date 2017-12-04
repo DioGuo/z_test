@@ -11,21 +11,23 @@
             div{
             	background-color: #CCFFFF;
             }
-            div#blockmain{
+            div.blockmain{
             	padding-top:30%;
             	margin-left:31%;
+            	float:left;
             }
             div#page{
-            	width:640px;
-            	height:1136px;
-            	background-color: transparent;
-            }
-            div.blankblock{
-            	padding-top:20%;/* 父元素的20% 不应该是page这个div的整体的20%吗 */
             	width:100%;
+            	height:100%;
+            	background-color: transparent;
             }
             div.header{
             	padding-top:20%;
+            }
+            div.icon{
+            	padding-top: 100%;
+            	background-color: grey;
+            	clear:both;
             }
             p.title{
             	font-size: 20px;
@@ -40,13 +42,13 @@
           Header
         </p>
       </div>
-      <div class="blankblock">
-      </div>
-      <div id="blockmain">
-      	
-        <div style="float:right">
-          <p style="font-size:30px">
-            葡萄藤
+      <div class="blockmain">
+        <!-- 中间logo和两个问题的区域 左边div放logo 右边div放上面文字和下面小字网址 -->
+        <div class="icon">
+        </div>
+        <div style="float:left">
+          <p style="font-size:50px;">
+            甲乙丙
           </p>
           <p style="font-size:20px">
             www.putaoteng.com
