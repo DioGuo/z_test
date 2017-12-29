@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8">
@@ -31,21 +32,43 @@
 			height:100px;
 			border:3px solid #cccccc;
 		}
-		p.charttitle{
+		h1{
 			font-size: 20px;
 			color:#3366CC;
 			text-align: center;
-		}
-		hr.dashed{
-			padding-bottom:-50px;
+			margin-top:10px;
 		}
 		.maintable table{
-			border-style:solid;
+			/*border-style:solid;*/
 			width:auto;
+			border-collapse:collapse;/*没效果*/
 		}
 		.maintable td{
-			border-style: solid;
-			border:1px;
+			border:0.0625em solid black;
+		}
+		.outline{
+			border:0.2em dotted #33CCCC;
+			outline:0.1em solid black;
+		}
+		
+		.pageheader div{
+			background-color: #62b1d0;
+			padding-top:30px;
+			/*width:auto;*/
+		}
+		.pageheader ul{
+			list-style: none;
+		}
+		.pageheader li{
+			float:left;
+			margin:2px 10px 2px 10px;
+			height:auto;
+		}
+		.pageheader a:hover{
+			background-color:#000000;
+		}
+		.pageheader a{
+			text-decoration:none;
 		}
       </style>
     </meta>
@@ -76,6 +99,9 @@
         </img>
       </div>
       <div class="FirstExcel">
+        <h1>
+          Normal Table
+        </h1>
         <br>
           <table border="1">
             <th rowspan="2">
@@ -112,13 +138,19 @@
               <td>
                 <ul>
                   <li>
-                    FirstLine
+                    <a href="">
+                      FirstLine
+                    </a>
                   </li>
                   <li>
-                    SecondLine
+                    <a href="">
+                      SecondLine
+                    </a>
                   </li>
                   <li>
-                    ThirdLine
+                    <a href="">
+                      ThirdLine
+                    </a>
                   </li>
                 </ul>
               </td>
@@ -129,10 +161,10 @@
       <!-- FirstExcel -->
       <div class="BeautyExcel">
         <div>
-          <p class="ChartTitle">
+          <h1>
             Statistical Table
-          </p>
-          <hr class="dashed">
+          </h1>
+          <hr>
             <p style="text-align:right">
               2017-12-18
             </p>
@@ -148,8 +180,10 @@
               <td rowspan="2">
                 1st1cell_2
               </td>
-              <td rowspan = "2">1stcell_3</td>
-              <td colspan = "2">
+              <td rowspan="2">
+                1stcell_3
+              </td>
+              <td colspan="2">
                 1stcell_4
               </td>
             </tr>
@@ -157,7 +191,9 @@
               <td>
                 2ndcell_1
               </td>
-              <td>2ndcell_2</td>
+              <td>
+                2ndcell_2
+              </td>
             </tr>
             <tr>
               <td rowspan="5">
@@ -166,19 +202,109 @@
               <td>
                 WangYan
               </td>
+              <td>
+                1
+              </td>
+              <td>
+                2
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                4
+              </td>
             </tr>
             <tr>
               <td>
                 4thcell_1
               </td>
-              <td>4thcell_2</td>
+              <td>
+                4thcell_2
+              </td>
+              <td>
+                2
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                4
+              </td>
             </tr>
-            <tr><td>5thcell_1</td></tr>
+            <tr>
+              <td>
+                5thcell_1
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                2
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                4
+              </td>
+            </tr>
           </table>
         </div>
         <!-- mainchart -->
       </div>
       <!-- SecondExcel -->
+      <div>
+        <h1>
+          ul
+        </h1>
+        <ul>
+          <li>
+            First Line
+          </li>
+          <li>
+            Second Line
+          </li>
+        </ul>
+      </div>
+      <!-- ul>li ol>li -->
+      <div>
+        <h1>
+          Form
+        </h1>
+        <form action="">
+          <span class="outline">
+            Put your Name Here!
+          </span>
+          <input style="margin-left:10px" type="text"/>
+        </form>
+      </div>
+      <!-- form -->
+      <div>
+        <h1>
+          New page
+        </h1>
+        <div class="pageheader">
+          <ul>
+            <li>
+              <a href="">
+                FirstPage
+              </a>
+            </li>
+            <li>
+              <a href="">
+                SecondPage
+              </a>
+            </li>
+            <li>
+              <a href="">
+                ThirdPage
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- no chart page -->
     </div>
     <!-- page -->
   </body>
